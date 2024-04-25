@@ -7,8 +7,40 @@
 
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
-    border: 0.5px solid grey;
+body {
+    min-height: 100vh;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* border: 0.5px solid grey; */
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    /* height: 100vh;
+    width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.subContainer {
+    display: flex;
+    flex-grow: 1;
+}
+
+.leftContainer {
+    background-image: url(./images/leaf.jpg);
+    background-size: cover;
+    /* width: 100vw;
+    height: 100vh; */
+    min-width: 40vw;
+}
+
+.rightContainer {
+    background-color: rgb(255, 246, 235);
+}
