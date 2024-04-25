@@ -21,8 +21,6 @@ body {
 }
 
 .mainContainer {
-    /* height: 100vh;
-    width: 100vw; */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -36,11 +34,87 @@ body {
 .leftContainer {
     background-image: url(./images/leaf.jpg);
     background-size: cover;
-    /* width: 100vw;
-    height: 100vh; */
     min-width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner {
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    margin-top: 20vh;
+    padding: 10px;
+}
+
+.title {
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'norsebold';
+    font-size: xx-large;
+}
+
+#logo {
+    width: 100px;
+}
+
+.photoAuthor {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.photoAuthor p,
+.photoAuthor a {
+    color: white;
 }
 
 .rightContainer {
-    background-color: rgb(255, 246, 235);
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formHeader,
+.formMain,
+.formFooter {
+    padding: 5% 15% 5% 20px;
+}
+
+.formMain {
+    background-color: white;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.formMainContent h3 {
+    padding-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1000px) {
+    form div {
+        margin-right: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    form div {
+        margin-right: 80px;
+    }
 }
